@@ -1,13 +1,8 @@
-/*
- * drv_led.cpp
- *
- *  Created on: 12 Apr 2014
- *      Author: Wills
- */
+
 #include <avr/io.h>
 #include "def.h"
 #include "drv_led.h"
-test
+
 void initLed(void){
 	uint8_t_ledPwmValuesPercent initialLEDPercentages ={100,100,100};
 	setupGreenAndRedLEDs();
