@@ -1,9 +1,4 @@
-/*
- * def.h
- *
- *  Created on: 12 Apr 2014
- *      Author: Wills
- */
+
 
 #ifndef DEF_H_
 #define DEF_H_

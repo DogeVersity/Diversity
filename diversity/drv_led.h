@@ -1,9 +1,3 @@
-/*
- * drv_led.h
- *
- *  Created on: 12 Apr 2014
- *      Author: Wills
- */
 
 #ifndef DRV_LED_H_
 #define DRV_LED_H_
