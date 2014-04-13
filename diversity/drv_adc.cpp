@@ -1,9 +1,10 @@
 #include <avr/io.h>
 #include <avr/interrupt.h>
 #include "drv_adc.h"
+#include "drv_gpio.h"
 ISR(ADC_vect) {
 
-	switch ADMUX {
+	switch (ADMUX) {
 		case 0x40: // ADMUX top 4 bits set to 0x4 and bottom set depending on which channel is read
 		RSSI.channelOne=readADCRegisters();
 		ADMUX=0x41; // Read Channel Two next
@@ -21,13 +22,14 @@ ISR(ADC_vect) {
 		ADMUX=0x40; //Read Channel One next
 		break;
 	}
+	updateVideoOutputSelectionOnGPIO(decideVideoOutput());
 
 }
 
 void initializeADC(void) {
 	ADMUX |= (1 << REFS0); //VCC used as AREF
 	ADCSRA |= (1 << ADIE) | (1 << ADEN) | (1 << ADPS0) | (1 << ADPS1)
-			| (1 << ADPS2); //125kHz clock, ADC interrupt enabled
+			| (1 << ADPS2); //125kHz clock, ADC interrupt enabled, divide by 128 prescaler
 	sei();
 	// enable global interrupts
 	ADCSRA |= 1 << ADSC; // Enable adc conversion
@@ -36,7 +38,7 @@ void initializeADC(void) {
 
 uint16_t readADCRegisters(void) {
 	uint8_t lowBits = ADCL;
-	return (ADCH << 8 | lowBits);
+	return ((ADCH << 8) | lowBits);
 }
 
 uint8_t decideVideoOutput(void) { //Returns 0 if there is a problem along the way i.e all RSSI values are the same
