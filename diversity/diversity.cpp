@@ -3,11 +3,10 @@
 #include "drv_led.h"
 #include "drv_GPIO.h"
 // By default starts with outputting internal video. Switches video source depending on RSSI
-int main()
-{
+int main() {
 	initGPIO();
 	initLed();
-	while (true) {
+	while (true) { // Dogeversity prouds itself on performance and only uses an interrupt driven approach.
 
 	}
 }
