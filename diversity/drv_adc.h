@@ -1,9 +1,4 @@
-/*
- * drv_adc.h
- *
- *  Created on: 13 Apr 2014
- *      Author: Wills
- */
+
 
 #ifndef DRV_ADC_H_
 #define DRV_ADC_H_
