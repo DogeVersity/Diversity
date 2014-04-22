@@ -6036,22 +6036,22 @@ Basic SMA packaged diode. Good for reverse polarization protection. Common part 
 <instance part="R6" gate="G$1" x="340.36" y="228.6"/>
 <instance part="SUPPLY11" gate="GND" x="363.22" y="223.52"/>
 <instance part="JP2" gate="G$1" x="365.76" y="96.52" rot="R180"/>
-<instance part="SUPPLY12" gate="GND" x="220.98" y="165.1"/>
+<instance part="SUPPLY12" gate="GND" x="220.98" y="182.88"/>
 <instance part="C2" gate="G$1" x="162.56" y="195.58"/>
 <instance part="C3" gate="G$1" x="172.72" y="195.58"/>
 <instance part="C9" gate="G$1" x="238.76" y="231.14" rot="R90"/>
-<instance part="D2" gate="G$1" x="256.54" y="203.2" smashed="yes" rot="R90">
-<attribute name="NAME" x="256.0574" y="205.74" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="259.3086" y="208.28" size="1.778" layer="96" rot="R270"/>
+<instance part="D2" gate="G$1" x="256.54" y="208.28" smashed="yes" rot="R90">
+<attribute name="NAME" x="256.0574" y="210.82" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="259.3086" y="213.36" size="1.778" layer="96" rot="R270"/>
 </instance>
 <instance part="L1" gate="A" x="269.24" y="226.06" smashed="yes">
 <attribute name="NAME" x="269.5956" y="230.7336" size="2.0828" layer="95" ratio="6" rot="SR0"/>
 <attribute name="VALUE" x="268.6558" y="222.4786" size="2.0828" layer="96" ratio="6" rot="SR0"/>
 </instance>
 <instance part="VREG" gate="G$1" x="172.72" y="231.14"/>
-<instance part="OUTCAP" gate="CAP1" x="284.48" y="198.12" smashed="yes" rot="R270">
-<attribute name="NAME" x="289.1028" y="202.2094" size="2.0828" layer="95" ratio="6" rot="SR270"/>
-<attribute name="VALUE" x="275.1328" y="198.7042" size="2.0828" layer="96" ratio="6" rot="SR270"/>
+<instance part="OUTCAP" gate="CAP1" x="284.48" y="213.36" smashed="yes" rot="R270">
+<attribute name="NAME" x="289.1028" y="217.4494" size="2.0828" layer="95" ratio="6" rot="SR270"/>
+<attribute name="VALUE" x="277.6728" y="213.9442" size="2.0828" layer="96" ratio="6" rot="SR270"/>
 </instance>
 </instances>
 <busses>
@@ -6141,7 +6141,7 @@ Basic SMA packaged diode. Good for reverse polarization protection. Common part 
 <wire x1="200.66" y1="243.84" x2="200.66" y2="248.92" width="0.1524" layer="91"/>
 <wire x1="284.48" y1="248.92" x2="284.48" y2="226.06" width="0.1524" layer="91"/>
 <pinref part="L1" gate="A" pin="1"/>
-<wire x1="284.48" y1="226.06" x2="284.48" y2="198.12" width="0.1524" layer="91"/>
+<wire x1="284.48" y1="226.06" x2="284.48" y2="213.36" width="0.1524" layer="91"/>
 <wire x1="276.86" y1="226.06" x2="284.48" y2="226.06" width="0.1524" layer="91"/>
 <junction x="284.48" y="226.06"/>
 <pinref part="SUPPLY7" gate="+5V" pin="+5V"/>
@@ -6284,44 +6284,42 @@ Basic SMA packaged diode. Good for reverse polarization protection. Common part 
 <wire x1="363.22" y1="228.6" x2="363.22" y2="226.06" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="143.51" y1="167.64" x2="144.78" y2="167.64" width="0" layer="91"/>
 <pinref part="SUPPLY12" gate="GND" pin="GND"/>
-<wire x1="144.78" y1="167.64" x2="162.56" y2="167.64" width="0" layer="91"/>
-<wire x1="162.56" y1="167.64" x2="172.72" y2="167.64" width="0" layer="91"/>
-<wire x1="172.72" y1="167.64" x2="190.5" y2="167.64" width="0" layer="91"/>
-<wire x1="190.5" y1="167.64" x2="200.66" y2="167.64" width="0" layer="91"/>
-<wire x1="200.66" y1="167.64" x2="220.98" y2="167.64" width="0" layer="91"/>
-<wire x1="220.98" y1="167.64" x2="256.54" y2="167.64" width="0" layer="91"/>
-<junction x="220.98" y="167.64"/>
+<wire x1="144.78" y1="185.42" x2="162.56" y2="185.42" width="0" layer="91"/>
+<wire x1="162.56" y1="185.42" x2="172.72" y2="185.42" width="0" layer="91"/>
+<wire x1="172.72" y1="185.42" x2="190.5" y2="185.42" width="0" layer="91"/>
+<wire x1="190.5" y1="185.42" x2="200.66" y2="185.42" width="0" layer="91"/>
+<wire x1="200.66" y1="185.42" x2="220.98" y2="185.42" width="0" layer="91"/>
+<wire x1="220.98" y1="185.42" x2="256.54" y2="185.42" width="0" layer="91"/>
+<junction x="220.98" y="185.42"/>
 <pinref part="J3" gate="G$1" pin="GND"/>
 <pinref part="J3" gate="G$1" pin="GNDBREAK"/>
-<wire x1="256.54" y1="167.64" x2="284.48" y2="167.64" width="0" layer="91"/>
+<wire x1="256.54" y1="185.42" x2="284.48" y2="185.42" width="0" layer="91"/>
 <wire x1="139.7" y1="208.28" x2="139.7" y2="210.82" width="0.1524" layer="91"/>
-<wire x1="139.7" y1="208.28" x2="139.7" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="208.28" x2="139.7" y2="185.42" width="0.1524" layer="91"/>
 <junction x="139.7" y="208.28"/>
-<wire x1="139.7" y1="167.64" x2="144.78" y2="167.64" width="0.1524" layer="91"/>
-<junction x="144.78" y="167.64"/>
-<junction x="172.72" y="167.64"/>
-<wire x1="172.72" y1="193.04" x2="172.72" y2="167.64" width="0.1524" layer="91"/>
-<wire x1="162.56" y1="193.04" x2="162.56" y2="167.64" width="0.1524" layer="91"/>
-<junction x="162.56" y="167.64"/>
-<wire x1="284.48" y1="190.5" x2="284.48" y2="167.64" width="0.1524" layer="91"/>
-<junction x="256.54" y="167.64"/>
+<wire x1="139.7" y1="185.42" x2="144.78" y2="185.42" width="0.1524" layer="91"/>
+<junction x="172.72" y="185.42"/>
+<wire x1="172.72" y1="193.04" x2="172.72" y2="185.42" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="193.04" x2="162.56" y2="185.42" width="0.1524" layer="91"/>
+<junction x="162.56" y="185.42"/>
+<wire x1="284.48" y1="205.74" x2="284.48" y2="185.42" width="0.1524" layer="91"/>
+<junction x="256.54" y="185.42"/>
 <pinref part="C3" gate="G$1" pin="2"/>
 <pinref part="C2" gate="G$1" pin="2"/>
 <pinref part="D2" gate="G$1" pin="A"/>
-<wire x1="256.54" y1="200.66" x2="256.54" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="256.54" y1="205.74" x2="256.54" y2="185.42" width="0.1524" layer="91"/>
 <pinref part="VREG" gate="G$1" pin="GND"/>
-<wire x1="200.66" y1="208.28" x2="200.66" y2="167.64" width="0.1524" layer="91"/>
-<junction x="200.66" y="167.64"/>
+<wire x1="200.66" y1="208.28" x2="200.66" y2="185.42" width="0.1524" layer="91"/>
+<junction x="200.66" y="185.42"/>
 <pinref part="VREG" gate="G$1" pin="NC_2"/>
 <pinref part="VREG" gate="G$1" pin="NC"/>
 <wire x1="187.96" y1="208.28" x2="190.5" y2="208.28" width="0.1524" layer="91"/>
 <pinref part="VREG" gate="G$1" pin="DAP"/>
 <junction x="190.5" y="208.28"/>
 <wire x1="195.58" y1="208.28" x2="190.5" y2="208.28" width="0.1524" layer="91"/>
-<wire x1="190.5" y1="208.28" x2="190.5" y2="167.64" width="0.1524" layer="91"/>
-<junction x="190.5" y="167.64"/>
+<wire x1="190.5" y1="208.28" x2="190.5" y2="185.42" width="0.1524" layer="91"/>
+<junction x="190.5" y="185.42"/>
 <pinref part="OUTCAP" gate="CAP1" pin="2"/>
 </segment>
 <segment>
@@ -7054,7 +7052,7 @@ Basic SMA packaged diode. Good for reverse polarization protection. Common part 
 </net>
 <net name="SW" class="2">
 <segment>
-<wire x1="256.54" y1="205.74" x2="256.54" y2="226.06" width="0.1524" layer="91"/>
+<wire x1="256.54" y1="210.82" x2="256.54" y2="226.06" width="0.1524" layer="91"/>
 <pinref part="D2" gate="G$1" pin="C"/>
 <pinref part="C9" gate="G$1" pin="2"/>
 <wire x1="256.54" y1="226.06" x2="256.54" y2="231.14" width="0.1524" layer="91"/>
